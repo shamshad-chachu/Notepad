@@ -16,7 +16,7 @@ body{
 }
 .book_container{
     padding: 15px;
-    width: 25%;
+    max-width: 25%;
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -116,4 +116,10 @@ body{
 }
 .popup-box textarea:focus{
     outline: none;
+}
+
+@media screen and ( max-width:578px){
+    .book_container{
+        max-width:70%;
+    }
 }
