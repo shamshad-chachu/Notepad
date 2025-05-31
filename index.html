@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h2>NOTE BOOK</h1>
+    </div>
+    
+    <div class="container">
+        <div class="book_container">
+            <h2>Trading Chart</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta molestiae totam hic consectetur magni ad! Earum corporis exercitationem nihil aut enim amet dolorum fuga sapiente numquam! Molestias modi ipsum voluptatibus?</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="title" id="book-title">
+            <input type="text" placeholder="author" id="book-author">
+            <textarea placeholder="short note" id="book-note"></textarea>
+            <button id="addbook">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
